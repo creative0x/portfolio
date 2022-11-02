@@ -11,7 +11,6 @@ export default function AnimatedText() {
       transition: { delay: 5.5, delayChildren: 5.5, staggerChildren: 1 },
     },
   };
-
   const child = {
     visible: {
       opacity: 1,
@@ -34,12 +33,12 @@ export default function AnimatedText() {
   };
 
   return (
-    <motion.div variants={container} initial="hidden" animate="visible">
-      <motion.div variants={child} className="flex space-x-5 text-2xl">
+    <div variants={container} initial="hidden" animate="visible">
+      <div variants={child} className="flex space-x-5 text-2xl">
         <ImFacebook className="cursor-pointer transiton duration-200 hover:scale-125" />
         <RiInstagramFill className="cursor-pointer transiton duration-200 hover:scale-125" />
         <ImTwitter className="cursor-pointer transiton duration-200 hover:scale-125" />
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }

@@ -33,17 +33,17 @@ export default function AnimatedText({ text, customClass }) {
   };
 
   return (
-    <motion.div
+    <div
       variants={container}
       initial="hidden"
       animate="visible"
       className="space-x-1 tracking-tight mt-2 mb-4 md:my-0"
     >
       {words.map((word, index) => (
-        <motion.span variants={child} key={index}>
+        <span variants={child} key={index} className="text-lg md:text-3xl">
           {word}.
-        </motion.span>
+        </span>
       ))}
-    </motion.div>
+    </div>
   );
 }

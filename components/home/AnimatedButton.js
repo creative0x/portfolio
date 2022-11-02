@@ -34,12 +34,12 @@ export default function AnimatedText() {
   };
 
   return (
-    <motion.div variants={container} initial="hidden" animate="visible">
-      <motion.div variants={child}>
+    <div variants={container} initial="hidden" animate="visible">
+      <div variants={child}>
         <button className="text-small md:text-xl bg-white text-black font-semibold px-4 py-1 md:px-8 md:py-2  md:my-10 transition duration-300 hover:scale-110">
           Explore Portfolio
         </button>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }

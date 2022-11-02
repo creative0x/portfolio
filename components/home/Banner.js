@@ -2,15 +2,13 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import AnimatedText from "./AnimatedText";
-import SplitText from "./SplitText";
-import TitleAnimatedText from "./TitleAnimatedText.js";
+import TitleAnimatedText from "./AnimatedTitle.js";
 import { ImFacebook, ImTwitter } from "react-icons/im";
 import { RiInstagramFill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import AnimatedSocials from "./AnimatedSocials";
 import AnimatedNav from "./AnimatedNav";
 import AnimatedButton from "./AnimatedButton";
-import Nav from "./Nav";
 
 export default function Banner() {
   const [nav, setNav] = useState(false);

@@ -11,7 +11,6 @@ export default function AnimatedText() {
       transition: { delay: 6, delayChildren: 6, staggerChildren: 1 },
     },
   };
-
   const child = {
     visible: {
       opacity: 1,
@@ -34,8 +33,8 @@ export default function AnimatedText() {
   };
 
   return (
-    <motion.div variants={container} initial="hidden" animate="visible">
-      <motion.ul
+    <div variants={container} initial="hidden" animate="visible">
+      <ul
         variants={child}
         className="hidden md:flex space-x-2 md:space-x-10  font-medium"
       >
@@ -51,7 +50,7 @@ export default function AnimatedText() {
         <li className="cursor-pointer transition duration-200 hover:scale-125">
           Contact Me
         </li>
-      </motion.ul>
-    </motion.div>
+      </ul>
+    </div>
   );
 }
