@@ -11,3 +11,9 @@
   color: white;
   caret-color: transparent;
 }
+
+@layer components {
+  .socials {
+    @apply transition duration-200 hover:scale-125 cursor-pointer;
+  }
+}

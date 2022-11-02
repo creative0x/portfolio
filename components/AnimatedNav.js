@@ -43,10 +43,10 @@ export default function AnimatedText() {
           About Me
         </li>
         <li className="cursor-pointer transition duration-200 hover:scale-125">
-          Web Development
+          Portfolio
         </li>
         <li className="cursor-pointer transition duration-200 hover:scale-125">
-          Film Production
+          Skills
         </li>
         <li className="cursor-pointer transition duration-200 hover:scale-125">
           Contact Me

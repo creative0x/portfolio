@@ -37,7 +37,7 @@ export default function AnimatedText({ text, customClass }) {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="space-x-1 tracking-tight"
+      className="space-x-1 tracking-tight mt-2 mb-4 md:my-0"
     >
       {words.map((word, index) => (
         <motion.span variants={child} key={index}>
