@@ -34,17 +34,17 @@ export default function TitleAnimatedText({ text, customClass }) {
   };
 
   return (
-    <motion.div
+    <div
       variants={container}
       initial="hidden"
       animate="visible"
       className="space-x-1"
     >
       {letters.map((word, index) => (
-        <motion.span variants={child} key={index} className={customClass}>
+        <span variants={child} key={index} className={customClass}>
           {word}
-        </motion.span>
+        </span>
       ))}
-    </motion.div>
+    </div>
   );
 }

@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Banner from "../components/home/Banner";
 import About from "../components/about/About";
+import Lang from "../components/lang/Lang";
+import Portfolio from "../components/portfolio/Portfolio";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
 
       <Banner />
       <About />
+      <Portfolio />
+      <Lang />
     </div>
   );
 }
