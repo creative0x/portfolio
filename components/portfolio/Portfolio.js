@@ -1,37 +1,33 @@
 import React from "react";
+import Project from "./Project";
+import netflixImg from "../../public/netflix.png";
+import cryptoImg from "../../public/crypto.png";
+import roofingImg from "../../public/roofing.jpg";
 
 export default function Portfolio() {
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          Projects
-        </p>
-        <h2 className="py-4">What I&apos;ve Built</h2>
+        <p className="text-xl tracking-widest uppercase ">Projects</p>
+        <h2 className="py-4 text-3xl">What I&apos;ve Created</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem
-            title="Property Finder"
-            backgroundImg={propertyImg}
+          <Project
+            title="Netflix Social"
+            backgroundImg={netflixImg}
             projectUrl="/property"
-            tech="React JS"
+            tech="Next Js Web App"
           />
-          <ProjectItem
+          <Project
             title="Crypto App"
             backgroundImg={cryptoImg}
             projectUrl="/crypto"
-            tech="React JS"
+            tech="User Interface Design"
           />
-          <ProjectItem
-            title="Netflix App"
-            backgroundImg={netflixImg}
+          <Project
+            title="Roofing Home Page"
+            backgroundImg={roofingImg}
             projectUrl="/netflix"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Twitch UI"
-            backgroundImg={twitchImg}
-            projectUrl="/twitch"
-            tech="Next JS"
+            tech="Static home page for roofing company"
           />
         </div>
       </div>
